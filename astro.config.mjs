@@ -9,7 +9,7 @@ import mdx from "@astrojs/mdx";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://astro-paper.pages.dev/",
+  site: "https://dot.codes/",
   // replace this with your deployed domain
   integrations: [tailwind({
     applyBaseStyles: false
