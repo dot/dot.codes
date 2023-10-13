@@ -1,8 +1,8 @@
 ---
 author: Shuhei Kondo
-pubDatetime: 2023-10-07T00:59:35Z
+pubDatetime: 2023-10-11 00:59:35+09:00
 title: Astro と bun で blog を作ってみた
-postSlug: ""
+postSlug: kick-start-of-astro-blog
 featured: false
 draft: false
 tags:
@@ -11,4 +11,25 @@ tags:
 description: Astro と bun で blog を作ってみた
 ---
 
-へろー
+定期的に罹患するblogを作りたい病になったので、触ってみたかったAstroとbunを使ってブログを作ってみる。
+テンプレートは、Astroの[Themes](https://astro.build/themes/)なかから[astro-paper](https://github.com/satnaing/astro-paper)を選んだ。わりとメンテされてそうで、デザインがシンプルで改修しやすそうなものを選んだ。
+
+```
+ rtx use -g bun@latest
+```
+
+で、bunを入れて、適当な場所で
+
+```
+bunx create-astro@latest -- --template satnaing/astro-paper
+```
+
+としてあとは指示に従って。`bun start`でローカルサーバが立ち上がるので、ちょこちょこと手を入れて終わり。
+
+mdxも使ってみたかったので
+
+```
+bun astro add mdx
+```
+
+で、mdxが入る。あとは`content/blog`配下にmdxの拡張子でファイル作るとReactのコード埋め込みできるところまでは確認した。
